@@ -54,24 +54,125 @@ max-width: 100%;
     color: black;
     text-decoration: none;
 }
+.menu-item ul li a:hover {
+    color: #FF5400;
+}
 .ham-burger {
     width: 30px;
     height: 30px;
 }
-/* .menu-item .ham-burger {
+.menu-item .ham-burger {
     display: none;
-} */
+}
+
+
+
+/* header */
+
+#header {
+   background-image: url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 600px;
+   border-radius: 16px;
+   /* background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%); */
+}
+.travel-info {
+    text-align: center;
+    padding-top: 8%;
+}
+
+.travel-info h1 {
+    font-size: 2rem;
+    color: white;
+    padding: 20px 0;
+}.travel-info p {
+    font-size: .9rem;
+    color: white;
+    padding: 10px 0;
+}
+
+.travel-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 10%;
+    gap: 30px;
+}
+.travel-box .box {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #FFF;
+}
+.travel-box span {
+    text-align: right;
+}
+.travel-box .search {
+    color: white;
+    background: #FF5400
+    
+}
+
+
+/* tour */
+
+.tour {
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+}
+.tour .tour-box h1 {
+    font-size: 2rem;
+    color: black;
+    padding: 10px 0;
+}
+.tour .tour-box p {
+    color: rgb(99, 99, 98);
+}
+.tour .tour-box .item-list {
+    padding: 12px 0;
+}
+.tour .tour-box .item-list li{
+    padding: 10px 0;
+    color: rgb(99, 99, 98);
+}
+
+.tour .tour-box .button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: #FF5400;
+    color: #FFF;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .wrapper {
-        max-width: 540px;
+        max-width: 500px;
     }
     
-    .menu-item {
+    .menu-item li {
         display: none;
     }
     .menu-item .ham-burger {
         display: block;
         color: black;
     }
+    #header {
+        flex-direction: column;
+    }
+    .travel-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .tour {
+        flex-direction: column;
+    }
+
 }
