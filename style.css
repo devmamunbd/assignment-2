@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+/* menu-bar */
+
+.menu-bar {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.logo li span {
+    
+    color: #FF5400;
+    font-size: 2rem;
+}
+.menu-item {
+    display: flex;
+}
+.menu-item ul {
+    display: flex;
+    align-items: center;
+}
+.menu-item ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+/* .menu-item ul li :nth-child(1) {
+    color: red;
+} */
+.menu-item ul li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.ham-burger {
+    width: 30px;
+    height: 30px;
+}
+/* .menu-item .ham-burger {
+    display: none;
+} */
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+    
+    .menu-item {
+        display: none;
+    }
+    .menu-item .ham-burger {
+        display: block;
+        color: black;
+    }
+}
