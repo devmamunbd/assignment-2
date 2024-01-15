@@ -150,6 +150,117 @@ max-width: 100%;
     border-radius: 8px;
 }
 
+.destination {
+    padding: 40px 0;
+}
+.destination .des-info {
+    text-align: center;
+}
+.destination .des-info h1{
+    font-size: 2rem;
+    color: black;
+    padding: 8px 0;
+}
+.destination .des-info p{
+    font-size: .9rem;
+    color: rgb(72, 71, 71);
+    padding: 8px 0;
+}
+
+.destination .destination-img, .image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.destination .destination-img img {
+    width: 100%;
+}
+.destination-img-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 15px;
+}
+ /* .image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+} */
+.destination .destination-img-2 img {
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}
+
+
+/* why-chose */
+
+.why-chose {
+    padding: 40px 0;
+}
+.why-chose .chose-title {
+    text-align: center;
+}
+.why-chose .chose-title h1{
+   font-size: 2rem;
+   color: black;
+}
+.why-chose .chose-title p{
+    padding: 10px 0;
+    color: rgba(19, 19, 24, 0.70);
+
+
+}
+.why-chose-box .chose-box i {
+    font-size: 2.2rem;
+    color: #FF5400;
+    padding: 20px 15px;
+}
+
+.why-chose-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.why-chose-box .chose-box h1 {
+    padding: 20px 15px;
+    font-size: 1.5rem;
+}
+.why-chose-box .chose-box p {
+    padding: 20px 15px;
+    font-size: .9rem;
+    color: rgb(70, 69, 69);
+}
+
+.why-chose-box .c-box-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.why-chose-box .c-box-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.why-chose-box .c-box-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/* .maldives {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+} */
+/* .srilanka {
+    grid-column: 4 / 2;
+    grid-row: 2 / 3;
+} */
 
 
 @media screen and (max-width: 576px) {
@@ -173,6 +284,10 @@ max-width: 100%;
     }
     .tour {
         flex-direction: column;
+    }
+    .why-chose-box {
+        grid-template-columns: repeat(1, 1fr);
+       ;
     }
 
 }
