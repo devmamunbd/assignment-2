@@ -182,7 +182,6 @@ button {
 .destination-img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
     gap: 15px;
 
 }
@@ -195,14 +194,14 @@ button {
 }
 .srilanka h1 {
     position: relative;
-    bottom: 30%;
+    bottom: 50%;
     text-align: center;
     color: white;
     font-size: 1.3rem;
 }
 .north-america h1 {
     position: relative;
-    bottom: 40%;
+    bottom: 50%;
     text-align: center;
     color: white;
     font-size: 1.3rem;
@@ -230,6 +229,17 @@ button {
 .bandorban {
     grid-column: 6/ 13;
 }
+.srilanka img {
+    height: 207px;
+}
+.kashmir img {
+    height: 207px;
+}
+
+.north-america img {
+    height: 207px;
+}
+
 
 /* 
 discover */
@@ -386,12 +396,104 @@ discover */
 /* deal-discount */
 
 .deal-discount {
-    padding: 40px 0;
+   padding-top: 30px;
 }    
+.deal-discount h1 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+.deal-discount p {
+    color: rgb(66, 64, 64);
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px 0;
+}
+.discount-image .button {
+    margin-left: 45%;
+    color: white;
+    background: #FF5400;
+    padding: 10px 24px;
+    border: none;
+}
+
+.discount-image {
+    padding: 30px 0;
+}
+
+.discount-image .deals-image {
+    margin-bottom: 20px;
+}
+.deals-image {
+    width: 100%;
+}
+.deals-image {
+    position: relative;
+}
+
+.discount-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+.delas-img-2 {
+    position: relative;
+}
+.discount-box-2 {
+    position: absolute;
+    left: 5%;
+}
 
 
+.discount-box .discount-info {
+    padding: 30px 20px;
+}
+.discount-box .discount-info li {
+    list-style: none;
+    color: #FF5400;
+}
+.discount-box .discount-info li span {
+    text-transform: capitalize;
+    color: #5A5A5D;
+}
+.discount-box .discount-info .discount-list {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
 
+.discount-box .discount-info h1, h3, h2, .button  {
+    text-align: left;
+}
 
+.discount-box .discount-info h1 {
+    color: #131318;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.discount-box .discount-info h3 {
+    color: #292930;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.discount-box .discount-info h2  {
+    color: #FF5400;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.discount-box .discount-info .btn {
+    background: #FF5400;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+}
 
 
 
@@ -578,8 +680,9 @@ footer li {
     }
     .travel-box {
         flex-direction: column;
-        gap: 8px;
+       
     }
+    
     .tour {
         flex-direction: column;
     }
@@ -625,4 +728,21 @@ footer li {
     .package {
        flex-direction: column;
      }
+     .deals-image {
+        width: 100%;
+      
+    }
+    .deals-image img{
+        width: 100%;
+        height: 500px;
+    }
+    .discount-box {
+        top: 30%;
+        left: 10%;
+        width: 400px;
+        height: 300px;
+    }
+    .destination-img {
+        grid-template-columns: repeat(4, 1fr);    
+    }
 }
