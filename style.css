@@ -702,6 +702,44 @@ footer li {
 
 /* Responsive */
 
+@media screen and (max-width: 992px) {
+     .wrapper {
+        max-width: 800px;
+    }
+   
+    .travel-box {
+        flex-direction: column;
+        padding: 0 0;
+    }
+    footer {
+        padding: 0 90px;
+    }
+    .discount-box {
+        top: 8%;
+        right: 30%;
+        width: 390px;
+        height: 300px;
+    }
+    .newsletter .img-box .save-box {
+        position: absolute;
+         top: 75%;
+         left: 60%;
+         border-radius: 16px;
+         background: #FF5400;
+         width: 160px;
+         height: 70px;
+         transform: rotate(-19.628deg);
+         text-align: center;
+         color: white;
+     }
+     .newsletter .img-box .save-box h1 {
+        font-size: .8rem;
+    }
+}
+
+
+
+
 @media screen and (max-width: 576px) {
     .wrapper {
         max-width: 480px;
