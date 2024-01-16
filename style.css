@@ -833,6 +833,26 @@ footer li {
         grid-template-columns: repeat(4, 1fr);    
     }
 
-  
-
+    .maldives{
+        grid-column: 1 / -1;
+    }
+    .indonesia {
+        grid-column: 1 / -1;
+    }
+    .srilanka {
+        grid-column: 1 / -1;
+    }
+    .north-america {
+        grid-column: 1 / -1;
+    }
+    .kashmir {
+        grid-column: 1 / -1;
+    }
+    .bangladesh {
+        grid-column: 1 / -1;
+    }
+    .bandorban {
+        grid-column: 1 / -1;
+    }
+    
 }
