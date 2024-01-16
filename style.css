@@ -75,8 +75,7 @@ max-width: 100%;
    width: 100%;
    height: 600px;
    border-radius: 16px;
-   background-image: linear-gradient(to top bottom, #1c1b1b, #ecf0f3, #dae6e7, #cddbd4, #cbcebe);
-}
+   background-image: linear-gradient(to top,  #cbcebe);}
 .travel-info {
     text-align: center;
     padding-top: 8%;
@@ -170,32 +169,140 @@ max-width: 100%;
     padding: 8px 0;
 }
 
-.destination .destination-img, .image {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
 .destination .destination-img img {
     width: 100%;
 }
-.destination-img-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px;
-    gap: 15px;
-}
- /* .image {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 40px;
-} */
-.destination .destination-img-2 img {
-    width: 100%;
-}
+
+
 button {
     cursor: pointer;
 }
+
+
+.destination-img {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    gap: 15px;
+
+}
+.desti-img h1 {
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.srilanka h1 {
+    position: relative;
+    bottom: 30%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.north-america h1 {
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.maldives {
+  
+    grid-column: 1 / 7;
+}
+.indonesia {
+    grid-column: 7 / 13;
+}
+.srilanka {
+   grid-column: 1 / 4;
+}
+.north-america {
+    grid-column: 4 / 9;
+}
+.kashmir {
+    grid-column: 9 / 13;
+    grid-row: 2 / 3;
+}
+.bangladesh {
+    grid-column: 1 / 6;
+}
+.bandorban {
+    grid-column: 6/ 13;
+}
+
+/* 
+discover */
+
+.discover {
+    padding: 40px 0;
+}
+
+
+.discover p {
+    font-size: .9rem;
+    color: #717174;
+    padding: 5px 0;
+    text-align: center;
+}
+.discover h1 {
+    font-size: 1.6rem;
+    color: #060606;
+    padding: 5px 0;
+    text-align: center;
+}
+.discover .divider {
+  margin: 0 auto;
+    height: 3px;
+    width: 248px;
+    background: #FF5400;
+}
+
+.package {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+}
+.package-box img {
+    width: 300px;
+    height: 380px;
+}
+
+.package-box {
+    text-align: center;
+    background: #fefefe;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.package-box .package-info {
+    text-align: center;
+    
+}
+.package-box .package-info p {
+    font-size: 1rem;
+    color: rgb(101, 98, 98);
+    padding: 10px 0;
+}
+.package-box .package-info h1 {
+    font-size: 1.2rem;
+    color: black;
+}
+.package-box .package-info h5 {
+    font-size: .8rem;
+    padding-bottom: 5px;
+    color: rgb(101, 100, 100);
+}
+
+.package-box .package-info .ratting {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.package-box .package-info i {
+    color: rgb(236, 165, 10);
+}
+
+
 
 
 /* why-chose */
@@ -216,8 +323,8 @@ button {
 
 
 }
-.why-chose-box .chose-box i {
-    font-size: 2.2rem;
+.why-chose-box .chose-box img {
+    font-size: 2rem;
     color: #FF5400;
     padding: 20px 15px;
 }
@@ -249,14 +356,42 @@ button {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
+.w-box {
+   margin: 0 auto;
+    margin-top: 20px;
+    width: 600px;
+}
 
-.why-chose-box .c-box-3 {
+.w-box .chose-box {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+.w-box .chose-box img {
+    font-size: 2rem;
+    color: #FF5400;
+    padding: 20px 15px;
+}
+
+.w-box .chose-box h1 {
+    padding: 20px 15px;
+    font-size: 1.5rem;
+}
+.w-box .chose-box p {
+    padding: 20px 15px;
+    font-size: .9rem;
+    color: rgb(70, 69, 69);
+}
 
 /* deal-discount */
+
+.deal-discount {
+    padding: 40px 0;
+}    
+
+
+
+
 
 
 
@@ -450,7 +585,7 @@ footer li {
     }
     .why-chose-box {
         grid-template-columns: repeat(1, 1fr);
-       ;
+      
     }
     .perfect-place {
       flex-direction: column;
@@ -482,4 +617,12 @@ footer li {
     .newsletter .img-box .save-box h1 {
         font-size: .9rem;
     }
+    .destination-img {
+        grid-template-columns: repeat(1, 1fr);
+      
+    
+    }
+    .package {
+       flex-direction: column;
+     }
 }
