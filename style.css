@@ -132,8 +132,12 @@ max-width: 100%;
 .travel-box span {
     text-align: right;
 }
+.travel-box .box span {
+   font-size: 13px
+}
 .travel-box .search {
     color: white;
+    font-size: 15px;
     background: #FF5400
     
 }
